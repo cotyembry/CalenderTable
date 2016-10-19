@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<!-- ;;**;; Big Picture (MARS)  is copyright 2013 Chickasaw Nation Sovereign Technology Solutions, LLC ; FEB 05, 2016
+ 	;; 2.0;MARS;**2**;FEB 06, 2016
+	;; "Per copyright/trademark, this CSP may not be copied, renamed or modified"
+ 	;;**;; MARS is the RPMS namespace, 2010
+ 	;;**;; Big Picture (MARS) copyright 2013 Sovereign Technology Solutions, LLC.,(STS) of the Chickasaw Nation
+ 	;;**;; HealthPic copyright/trademark 2015 Sovereign Technology Solutions, LLC.,(STS) of the Chickasaw Nation
+ -->
+<html>
+<head>
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script type="text/javascript" src="marsjs/js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="marsjs/js/jquery.fixheadertableALTERED.js"></script>
+<script type="text/javascript" src="marsjs/js/jquery-ui.js"></script>
+<script type="text/javascript" src="marsjs/js/jquery.tablesorter.min.js"></script>
+<link rel="stylesheet" type="text/css" href="marsjs/css/base.css"/>
+<link rel="stylesheet" type="text/css" href="marsjs/css/jquery-ui-1.10.4.custom.css"/>
+<link rel="stylesheet" type="text/css" href="marsjs/css/white.css?ver=2"/><!--
+<link rel="stylesheet" type="text/css" href="#(%session.Data("Theme"))#"/> 
+<link rel="stylesheet" type="text/css" href="#(%session.Data("Color"))#"/>  -->
+
+<title>Emergency Department BOARDING</title>
+
+
+
+<style type="text/css">
+html, body{
+	height: 90%;
+}
+td{
+	font-size:12px;	
+}
+th{
+	font-size:small;
+}
+.content{
+	display:none;
+	margin-left:auto;
+	margin-right:auto;
+	width:1110px;	
+}
+.loading{
+  	position:absolute; 
+  	top:50%;
+  	left: 50%;	
+}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".content").fadeIn();
+	$(".loading").fadeOut();
+	adjustSize();	   
+});
+</script>
+
+
+
+</head>
+<body onresize="adjustSize();">
+<br><br>
+
+
+		
+
+<div class="loading">
+	<center>
+	<img src="marsjs/images/ajax_loader_48.gif">
+	<br>
+	<b>LOADING...</b>
+	</center>
+</div>
+
+<div class="content" align="center">
+
+<div align="left" style="width:20%;display:inline-block;">
+	<a href="MARSBP.CSP">&lt;&lt;Back</a>
+</div>
+<div align="center" style="width:59%;display:inline-block;font-size:large;"> 
+	<b>Discharges<br>  
+	<br> for 10/19/2016</b>	
+</div>
+
+<div align="right" style="width:20%;display:inline-block;">
+	
+</div>
+
+<table id="table1">
+  <thead>
+    <tr>
+       <th>Date @ Time</th>
+      <th>HRNO</th>
+      <th>Triage<bR> Level</th>
+      <th>Purpose <BR>of Visit</th>
+      <th>Time<br>Discharged</th>
+      <th>Disposition</th>
+      <th>LOS</th>
+      <th>AIEN</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<tr>
+	<td><center>10/18/2016@20:23</center></td>
+	<td><center>174530</center></td>
+	<td><center>4</center></td>
+	<td><center>22  m/o female with intermittent vomiting and sleeping more onset today. Mother denies child with diarrhea or fever. Child alert and active in triage. Carried per mother. Pt respirations with ease. </center></td><!-- STS/RVU CHANGED FROM <td><center>#($P(^AMERVSIT(MARSVIEN,1),"^",1)) #</center></td> ON 2015 01 02-->
+	<td><center>3161019 @ 10:50</center></td>
+	<td><center>HOME </center></td>
+	<td><center>4h 19m</center></td>
+	<td><center>14354911</center></td>
+	</tr>
+<tr>
+	<td><center>10/18/2016@20:22</center></td>
+	<td><center>85868</center></td>
+	<td><center>3</center></td>
+	<td><center>22 y/o female with c/o N/V onset this am. Denies diarrhea or fever. Pt pale. States feels weak. Denies dizziness. Ambulatory to triage. Denies pain. A & O x 3. </center></td><!-- STS/RVU CHANGED FROM <td><center>#($P(^AMERVSIT(MARSVIEN,1),"^",1)) #</center></td> ON 2015 01 02-->
+	<td><center>3161019 @ 10:50</center></td>
+	<td><center>HOME </center></td>
+	<td><center>4h 20m</center></td>
+	<td><center>14354912</center></td>
+	</tr>
+<tr>
+	<td><center>10/18/2016@18:50</center></td>
+	<td><center>59146</center></td>
+	<td><center>3</center></td>
+	<td><center>Patient reports was sent from Little Axe clinic </center></td><!-- STS/RVU CHANGED FROM <td><center>#($P(^AMERVSIT(MARSVIEN,1),"^",1)) #</center></td> ON 2015 01 02-->
+	<td><center>3161019 @ 10:50</center></td>
+	<td><center>HOME </center></td>
+	<td><center>6h 52m</center></td>
+	<td><center>14354914</center></td>
+	</tr>
+<tr>
+	<td><center>10/18/2016@19:56</center></td>
+	<td><center>56078</center></td>
+	<td><center>3</center></td>
+	<td><center>26 y/o female with c/o generalized abdominal pain and back pain x 3 weeks with intermittent vaginal bleeding. Has nausea, occasional diarrhea, but no vomiting. Unsure of fever, has not checked temp. Ambulatory to triage. A & O x 3. </center></td><!-- STS/RVU CHANGED FROM <td><center>#($P(^AMERVSIT(MARSVIEN,1),"^",1)) #</center></td> ON 2015 01 02-->
+	<td><center>3161019 @ 10:50</center></td>
+	<td><center>HOME </center></td>
+	<td><center>5h 4m</center></td>
+	<td><center>14354915</center></td>
+	</tr>
+<tr>
+	<td><center>10/18/2016@21:25</center></td>
+	<td><center>117325</center></td>
+	<td><center>3</center></td>
+	<td><center>25 y/o male states seen her 3 days ago and told he had a 5mm kidney stone. C/O pain (R) low back pain, vomiting, fever, chills since noon today. Pt states unable to void urine. Last time urinated was 1600 and only a small amount. A & O x 3. Pt ambulatory to triage. States Oxycodone not helping pain and instructed to return to ER if worsened. </center></td><!-- STS/RVU CHANGED FROM <td><center>#($P(^AMERVSIT(MARSVIEN,1),"^",1)) #</center></td> ON 2015 01 02-->
+	<td><center>3161019 @ 10:50</center></td>
+	<td><center>ADMIT TO ACUTE CARE 1 </center></td>
+	<td><center>5h 4m</center></td>
+	<td><center>14354918</center></td>
+	</tr>
+<tr>
+	<td><center>10/18/2016@19:26</center></td>
+	<td><center>135230</center></td>
+	<td><center>3</center></td>
+	<td><center>30 y/o female with c/o pain RUQ that radiates around to back, constant with N/V x 3 weeks. Denies diarrhea or fever. States is a piercing type pain. States has US that showed sludge on gallbladder. Ambulatory to triage. A & O x 3. Respirations with ease. </center></td><!-- STS/RVU CHANGED FROM <td><center>#($P(^AMERVSIT(MARSVIEN,1),"^",1)) #</center></td> ON 2015 01 02-->
+	<td><center>3161019 @ 10:50</center></td>
+	<td><center>HOME </center></td>
+	<td><center>4h 39m</center></td>
+	<td><center>14354923</center></td>
+	</tr>
+<tr>
+	<td><center>10/18/2016@23:36</center></td>
+	<td><center>118079</center></td>
+	<td><center>4</center></td>
+	<td><center>59 y/o male with c/o (R) sciatic nerve pain x 2 months. States seen here approx 1-2 months ago for same. Pt to triage via W/C. A & O x 3. Respirations with ease. Seen at OKC clinic and received Tramadol, Gabapentin with no relief. </center></td><!-- STS/RVU CHANGED FROM <td><center>#($P(^AMERVSIT(MARSVIEN,1),"^",1)) #</center></td> ON 2015 01 02-->
+	<td><center>3161019 @ 10:50</center></td>
+	<td><center>HOME </center></td>
+	<td><center>4h 19m</center></td>
+	<td><center>14354927</center></td>
+	</tr>
+
+  </tbody>
+</table>
+
+</div>
+
+<script type="text/javascript">
+jQuery.tablesorter.addParser({
+  id: "dateTimes",
+  is: function(s) {
+    return /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}.+/.test(s);
+  },
+  format: function(s) {
+	var dateTime = s.slice(6,10).toString() + s.slice(0,2).toString() + s.slice(3,5).toString();
+	dateTime = dateTime.toString() + s.slice(13,15).toString() + s.slice(16,18).toString();
+    return jQuery.tablesorter.formatFloat( dateTime );
+  },
+  type: "numeric"
+});
+
+// addition of parser to tablesorter to correctly sort times in hours and minutes 
+jQuery.tablesorter.addParser({
+  id: "hours",
+  is: function(s) {
+    return /^[0-9]+h\s\d\d?m$/.test(s);
+  },
+  format: function(s) {
+	  
+	var regex = /^[0-9]+h\s\d\d?m$/;
+	
+	if( regex.test(s) ){  
+	
+		var x = s.split(" ");	
+		var hours = x[0].replace("h",".");
+		var mins = x[1].replace("m","")
+		
+		if( mins.length == 1 ){
+			mins = "0" + mins.toString();
+		}
+		
+		var time = hours.toString() + mins.toString();
+		
+	}
+	else{
+		
+		var time = 0;
+		
+	}
+	
+    return jQuery.tablesorter.formatFloat( time );
+    
+  },
+  type: "numeric"
+});
+
+
+$("#table1").tablesorter({
+	sortList: [[0,0], [1,0]],
+	headers:{
+				0:{ sorter: "dateTimes"},
+				4:{ sorter: "dateTimes"},
+				6:{ sorter: "hours"}
+	}
+	
+})
+
+$("#table1 th").hover(
+	function() {
+		
+		$(this).addClass("ui-state-hover");
+	},
+	function() {
+		$(this).removeClass("ui-state-hover");
+	}
+);
+
+$('#table1').fixheadertable({
+   			colratio    : [ 140, 70, 60, 300, 140, 200, 75, 95 ],
+    		height      : 450,
+    		width       : 1100,
+    		resizeCol	: true,
+    		collapsed	: false,
+    		minColWidth	: 40
+});
+	
+function adjustSize(){
+	if( $("body").width() < 1110){ 
+		$("table").closest(".t_fixed_header_main_wrapper").parent().width("99%");
+		
+		$(".content").width("99%");
+
+	}
+	else{
+		$("table").closest(".t_fixed_header_main_wrapper").parent().width("1100");
+		$(".content").width("1110");
+	}
+	
+	if( ($("body").height() - 200) < 450 ){
+		$("table").closest(".body").height( $("body").height() - 200 );	
+		theight = $("body").height() - 200;	
+	}
+	else{
+		$("table").closest(".body").height(450);
+		theight = 450;	
+	}
+}
+</script>
+</body>
+</html>
